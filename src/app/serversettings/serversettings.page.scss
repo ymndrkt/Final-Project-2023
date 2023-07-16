@@ -67,6 +67,7 @@ ion-title{
   text-align: center;
   background-color: rgba(98, 188, 96, .6);
   font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
   
 }
 
@@ -112,7 +113,19 @@ ion-title{
   width: 30cm;
   background-color: rgba(242, 242, 242, .9);
   font-family: 'Poppins', sans-serif;
-  
+  border-radius: 20px;
+}
+@media (max-width: 1500px) {
+  .middle-card {
+    width: 950px;
+    height: 600px;
+  }
+}
+@media (max-width: 1300px) {
+  .middle-card {
+    width: 850px;
+    height: 600px;
+  }
 }
 //end
 

@@ -72,7 +72,14 @@ ion-title{
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   font-family: 'Poppins', sans-serif;
-  
+  border-radius: 20px;
+}
+
+//card content
+.proxy-map{
+  height: 260px;
+  width: auto;
+  margin-top: 100px;
 }
 
 .legendCard {
@@ -95,7 +102,4 @@ ion-card-title {
   text-align: center;
 }
 
-.edit{ //edit button
-  margin-top: 20px;
-}
 //end
