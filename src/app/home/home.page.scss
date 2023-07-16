@@ -1,0 +1,248 @@
+//header
+ion-toolbar {
+  --background: #62BC60;
+  --color:white;
+}
+
+ion-title{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-batmc{
+  width: 40px; 
+  height: auto;
+  margin-right: 20px;
+}
+.grid-head{
+  display: flex;
+  flex-direction: row;
+  
+}
+.title-head{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.title-sentence{
+  text-align: right;
+  margin-right: 50px;
+  font-weight: lighter;
+}
+//end of header
+
+
+
+//side menu
+ion-menu{
+  --ion-background-color: #121212; 
+  --backdrop-filter: none;
+}
+.menu-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.main{
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.sub{
+  display: block;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  height: 50px;
+}
+
+.out{
+  display: block;
+  width: 100%;
+  background-color: rgb(224, 30, 30);
+  font-size: 15px;
+  height: 50px;
+}
+
+// end of side menu
+
+
+
+//LAN MAP & BATANGAS MEDICAL CENTER TExt
+.title-cont{
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+.title-cont-2{
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+//end
+
+
+
+//background
+.bg-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/background/bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9Daaaa;
+  opacity: .8;
+}
+//end of bg
+
+
+
+//box in the middle
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: rgba(98, 188, 96, .7);
+  font-family: 'Poppins', sans-serif;
+  
+}
+//end
+
+
+//1st row in the card
+.first-batch{
+  display: flex;
+  flex-direction: row;
+}
+
+.image-networkmap {
+  width: 120px;
+  height: auto;
+  margin: 30px;
+}
+.image-comp {
+  width: 170px;
+  height: auto;
+  margin: 30px;
+  margin-right: 10px;
+}
+.image-router {
+  width: 140px;
+  height: auto;
+  margin: 30px;
+  margin-left: 20px;
+}
+
+.txt-icon{
+  text-align: center;
+  color: black;
+}
+//end
+
+
+
+//2nd row in the card
+.second-batch{
+  display: flex;
+  flex-direction: row;
+}
+
+.image-switch {
+  width: 150px;
+  height: auto;
+  margin: 20px;
+  margin-bottom: -25px;
+}
+.image-server {
+  width: 140px;
+  height: auto;
+  margin: 20px;
+  margin-bottom: -20px;
+}
+
+.txt-icon2{
+  text-align:center;
+  color: black;
+}
+//end
+
+
+
+//hover
+.image-networkmap {
+  transition: transform 0.3s;
+}
+.image-networkmap:hover {
+  transform: scale(1.1);
+}
+
+.image-comp {
+  transition: transform 0.3s;
+}
+.image-comp:hover {
+  transform: scale(1.1);
+}
+
+.image-router {
+  transition: transform 0.3s;
+}
+.image-router:hover {
+  transform: scale(1.1);
+}
+
+.image-switch {
+  transition: transform 0.3s;
+}
+.image-switch:hover {
+  transform: scale(1.1);
+}
+
+.image-server {
+  transition: transform 0.3s;
+}
+.image-server:hover {
+  transform: scale(1.1);
+}
+
+//end hover

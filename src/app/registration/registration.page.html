@@ -1,0 +1,44 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-grid>
+    <ion-row class="header">
+        <img src="assets/icon/wc-logo.png" alt="Logo" class="logo"> 
+        <ion-title class="header-title">Batangas Medical Center LAN Map Web Application</ion-title>
+    </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  
+  <div class="form-box">
+    <ion-card class="card ">
+
+      <ion-title class="title" >Sign Up</ion-title>
+
+      <div class="content-section">
+        <ion-input type="text" placeholder="Name" class="input-text"></ion-input>
+      </div>
+
+      <div class="content-section">
+        <ion-input type="email" placeholder="Email" class="input-text"></ion-input>
+      </div>
+
+      <div class="content-section">
+        <ion-input type="password" placeholder="Password" class="input-text"></ion-input>
+      </div>
+
+      <div class="content-section">
+        <ion-input type="password" placeholder="Confirm Password" class="input-text"></ion-input>
+      </div>
+      
+      <ion-button expand="full" type="submit" (click)="redirectToLogin()">Sign Up</ion-button>
+    </ion-card>
+  </div>
+</ion-content>

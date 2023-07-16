@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+      <ion-title>Settings</ion-title>
+    </ion-row>
+    </ion-grid>
+    
+  
+    <ion-buttons slot="end" class="back-button">
+      <ion-button (click)="goBack()" class="go-back-button" fill="clear">
+        <ion-icon name="chevron-back" class="go-back-icon"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+<ion-grid>
+  <ion-row>
+    <div class="left-box">
+      <ion-card class="left-card"> 
+        <ion-card-content>
+
+          <div>
+            <ion-img src="/assets/home-logo/comp.png" class="img-logo"></ion-img>
+          </div>
+          <div class="txt-logo">
+            <p>Computers & Peripherals</p>
+          </div>
+          
+          <ion-title class="title">Device Information</ion-title>
+
+          <div class="content-section"> 
+            <ion-input type="text" placeholder="Device Name" class="input-text"></ion-input>
+          </div>
+          <div class="content-section"> 
+            <ion-input type="text" placeholder="Device Type" class="input-text"></ion-input>
+          </div>
+          <div class="content-section"> 
+            <ion-input type="text" placeholder="MAC Address" class="input-text"></ion-input>
+          </div>
+          <div class="content-section"> 
+            <ion-input type="text" placeholder="IP Address" class="input-text"></ion-input>
+          </div>
+
+          <ion-title class="title">Device Location</ion-title>
+
+          <div class="content-section"> 
+            <ion-input type="text" placeholder="Building" class="input-text"></ion-input>
+          </div>
+          <div class="content-section"> 
+            <ion-input type="text" placeholder="Floor" class="input-text"></ion-input>
+          </div>
+
+          <ion-button  type="submit">+ Add</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    <div class="middle-box">
+      <ion-card class="middle-card "> 
+        <ion-card-content>
+
+          <table class="custom-table">
+            <thead class="theads">
+              <tr>
+                <th>Device Name</th>
+                <th>Device Type</th>
+                <th>MAC Address</th>
+                <th>IP Address</th>
+                <th>Building</th>
+                <th>Floor</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td>Desktop-B123 </td>
+                <td>PC</td>
+                <td>D0:T8:24:CD:6D:60</td>
+                <td>192.168.2.1 </td>
+                <td>Building 1</td>
+                <td>1st Flr</td>
+                <td style="color:red;">down</td>
+              </tr>
+              <tr>
+                <td>Desktop-B423 </td>
+                <td>PC </td>
+                <td>D0:T9:64:C0:6I:60 </td>
+                <td>192.168.2.2 </td>
+                <td>Building 1 </td>
+                <td>1st Flr </td>
+                <td style="color:green;">up</td>
+              </tr>
+              <tr>
+                <td>Desktop-B623 </td>
+                <td>PC </td>
+                <td>D0:T5:74:90:6F:P0 </td>
+                <td>192.168.2.3 </td>
+                <td>Building 1 </td>
+                <td>1st Flr</td>
+                <td style="color:green;">up</td>
+              </tr>
+              <tr>
+                <td>Epson-1P23 </td>
+                <td>Printer </td>
+                <td>P0:R5:74:90:6F:P0</td>
+                <td>192.168.2.4 </td>
+                <td>Building 1 </td>
+                <td>1st Flr </td>
+                <td style="color:green;">UP </td>
+              </tr>
+              <tr>
+                <td>Epson-1P83 </td>
+                <td>Printer </td>
+                <td>P1:R2:74:90:6F:P0</td>
+                <td>192.168.2.5</td>
+                <td>Building 1</td>
+                <td>1st Flr</td>
+                <td style="color:green;">UP</td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-row>
+</ion-grid>

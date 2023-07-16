@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+      <ion-title>Switches</ion-title>
+    </ion-row>
+    </ion-grid>
+    
+  
+    <ion-buttons slot="end" class="back-button">
+      <ion-button (click)="goBack()" class="go-back-button" fill="clear">
+        <ion-icon name="chevron-back" class="go-back-icon"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+<div class="main-box">
+  <ion-card class="card des"> 
+    <ion-card-content>
+      <table class="custom-table">
+        <thead class="theads">
+          <tr>
+            <th>Device Name</th>
+            <th>MAC Address</th>
+            <th>IP Address</th>
+            <th>Building</th>
+            <th>Floor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>RG-S5750C-48GT4XS-H</td>
+            <td>S0:W9:64:CC:62:00</td>
+            <td>192.168.1.1</td>
+            <td>Bldg 1</td>
+            <td>2nd Flr</td>
+            <td style="color:red;">down</td>
+          </tr>
+          <tr>
+            <td>RG-DEMUX(C)-24LC/LC+RG-MUX(C)-24LC/LC</td>
+            <td>S0:W8:45:7D:6D:70</td>
+            <td>192.168.1.2</td>
+            <td>Bldg 1</td>
+            <td>2nd flr</td>
+            <td style="color:red;">down</td>
+          </tr>
+          <tr>
+            <td>RG-DEMUX(C)-24LC/LC+RG-MUX(C)-24LC/LC</td>
+            <td>S1:W3:55:7D:6D:70</td>
+            <td>192.168.1.3</td>
+            <td>Bldg 1</td>
+            <td>2nd flr</td>
+            <td style="color:green;">up</td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+    </ion-card-content>
+  </ion-card>
+</div>

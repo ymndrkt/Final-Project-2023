@@ -1,0 +1,101 @@
+//header
+ion-toolbar {
+  --background: #62BC60;
+  --color:white;
+}
+
+ion-title{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 50px;
+}
+
+.back-button{
+  width: 40px; 
+  height: auto;
+  margin-right: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+//end of header
+
+
+//background
+.bg-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/background/bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9Daaaa;
+  opacity: .8;
+}
+//end of bg
+
+
+//box in the middle
+.main-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card {
+  position: relative;
+  height: 600px;
+  width: 38cm;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.legendCard {
+  background: #ebeeeb;
+  color: #000000;
+  position:fixed;
+  height: 4cm;
+  width: 4.5cm;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  text-align: left;
+}
+
+ion-card-title {
+  --color: #000000;
+  text-align: center;
+}
+
+.edit{ //edit button
+  margin-top: 20px;
+}
+//end

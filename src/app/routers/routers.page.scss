@@ -1,0 +1,135 @@
+//header
+ion-toolbar {
+  --background: #62BC60;
+  --color:white;
+}
+
+ion-title{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 50px;
+}
+
+.back-button{
+  width: 40px; 
+  height: auto;
+  margin-right: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+//end of header
+
+
+//background
+.bg-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/background/bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9Daaaa;
+  opacity: .8;
+}
+//end of bg
+
+
+//box in the middle
+.main-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card {
+  position: relative;
+  height: 600px;
+  width: 38cm;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: rgba(242, 242, 242, .9);
+  font-family: 'Poppins', sans-serif;
+  
+}
+//end
+
+
+//table
+.custom-table {
+  width: 100%;
+  color: black;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.custom-table th:nth-child(1),//for Name
+.custom-table td:nth-child(1) {
+  width: 600px; 
+}
+.custom-table th:nth-child(2),//for MAC Address
+.custom-table td:nth-child(2) {
+  width: 500px; 
+}
+.custom-table th:nth-child(3),//for IP Address
+.custom-table td:nth-child(3) {
+  width: 600px; 
+}
+.custom-table th:nth-child(4),//for Building
+.custom-table td:nth-child(4) {
+  width: 300px; 
+}
+.custom-table th:nth-child(5),//for Floor
+.custom-table td:nth-child(5) {
+  width: 300px; 
+}
+.custom-table th:nth-child(6),//for Status
+.custom-table td:nth-child(6) {
+  width: 300px; 
+}
+//end
+
+//card-scroll
+ion-card-content {
+  max-height: calc(100% - #{50px});
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+//end

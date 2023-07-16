@@ -1,0 +1,216 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid class="grid-head">
+      <ion-row >
+        <ion-title>REPORTS</ion-title>
+      </ion-row>
+      <ion-row class="title-head">
+        <ion-title class="title-sentence">Batangas Medical Center</ion-title>
+      </ion-row>
+    </ion-grid>
+      
+
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+        <ion-img src="assets/icon/wc-logo.png" class="logo-batmc"></ion-img>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" content-id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="menu-button main">Reports</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="menu-button">
+      <ion-list>
+      <ion-item>
+        <ion-button class="menu-button sub" fill="clear" (click)="redirectToNetwork()">Network</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button class="menu-button sub" fill="clear" (click)="redirectToSettings()">Settings</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button class="menu-button out" fill="clear" (click)="redirectToLogin()"> Sign out</ion-button>
+      </ion-item>
+    </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main-content"></ion-router-outlet>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  
+  <div class="main-box">
+    <ion-card class="card des">
+
+    
+        <div class="main-box">
+          <ion-card class="card"> 
+            <ion-card-content>
+              <table class="custom-table">
+                <thead class="theads">
+                  <tr>
+                    <th>Device Name</th>
+                    <th>LastDownTime</th>
+                    <th>LastDownDate</th>
+                    <th>IP Address</th>
+                    <th>MAC Address</th>
+                    <th>Building</th>
+                    <th>Floor</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>RG-S5750C-48GT4XS-H</td>
+                    <td>13:25:12</td>
+                    <td>2023-01-25</td>
+                    <td>192.168.1.1</td>
+                    <td>C0:A9:64:CC:62:00</td>
+                    <td>Bldg 1</td>
+                    <td>2nd flr</td>
+                    <td style="color:red;">down</td>
+                  </tr>
+                  <tr>
+                    <td>RG-DEMUX(C)-24LC/LC+RG-MUX(C)-24LC/LC</td>
+                    <td>14:27:18</td>
+                    <td>2023-01-25</td>
+                    <td>192.168.1.2</td>
+                    <td>S0:W8:45:7D:6D:70</td>
+                    <td>Bldg 1</td>
+                    <td>2nd flr</td>
+                    <td style="color:red;">down</td>
+                  </tr>
+                  <tr>
+                    <td>Desktop-B123 </td>
+                    <td>09:30:10</td>
+                    <td>2023-01-25</td>
+                    <td>192.168.2.1 </td>
+                    <td>D0:T8:24:CD:6D:60</td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr</td>
+                    <td style="color:red;">down</td>
+                  </tr>
+                  <tr>
+                    <td>RG-DEMUX(C)-24LC/LC+RG-MUX(C)-24LC/LC</td>
+                    <td>09:30:10</td>
+                    <td>2023-01-24</td>
+                    <td>192.168.1.3</td>
+                    <td>S1:W3:55:7D:6D:70</td>
+                    <td>Bldg 1</td>
+                    <td>2nd flr</td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>Desktop-B423 </td>
+                    <td>09:30:10</td>
+                    <td>2023-01-15</td>
+                    <td>192.168.2.2 </td>
+                    <td>D0:T9:64:C0:6I:60 </td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr </td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>Desktop-B623 </td>
+                    <td>09:30:10</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.2.3 </td>
+                    <td>D0:T5:74:90:6F:P0 </td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr</td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>Epson-1P23 </td>
+                    <td>09:30:10</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.2.4 </td>
+                    <td>P0:R5:74:90:6F:P0</td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr </td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>Epson-P </td>
+                    <td>09:00:10</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.2.4 </td>
+                    <td>P0:R5:74:90:6F:P0</td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr </td>
+                    <td style="color:green;">up </td>
+                  </tr>
+                  <tr>
+                    <td>DELL</td>
+                    <td>10:00:0</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.3.1 </td>
+                    <td>S1:E3:24:CD:6D:90</td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr</td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>HP</td>
+                    <td>10:00:0</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.3.2</td>
+                    <td>S0:E8:24:CD:6D:60</td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr</td>
+                    <td style="color:green;">up</td>
+                  </tr> 
+                  <tr>
+                    <td>Asus ROG Rapture GT-AXE16000</td>
+                    <td>10:00:0</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.4.1 </td>
+                    <td>R0:T8:24:CD:6D:60</td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr</td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>Synology WRX560</td>
+                    <td>10:00:0</td>
+                    <td>2023-01-20</td>
+                    <td>192.168.4.2 </td>
+                    <td>R2:T6:64:C0:6I:60 </td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr </td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  <tr>
+                    <td>TP-Link Archer AXE75</td>
+                    <td>10:00:0</td>
+                    <td>2023-01-20</td>
+                    <td>R5:T5:74:90:6F:P0</td>
+                    <td>192.168.4.4 </td>
+                    <td>Bldg 1</td>
+                    <td>1st Flr </td>
+                    <td style="color:green;">up</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </ion-card-content>
+          </ion-card>
+        </div>
+    
+      
+    </ion-card>
+  </div>
+</ion-content>

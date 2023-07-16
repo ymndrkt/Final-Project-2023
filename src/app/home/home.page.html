@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid class="grid-head">
+      <ion-row>
+        <ion-title>NETWORK</ion-title>
+      </ion-row>
+      <ion-row class="title-head">
+        <ion-title class="title-sentence">Batangas Medical Center</ion-title>
+      </ion-row>
+    </ion-grid>
+      
+
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+        <ion-img src="assets/icon/wc-logo.png" class="logo-batmc"></ion-img>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" content-id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="menu-button main" >Network</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content >
+    <div class="menu-button" >
+      <ion-list>
+      <ion-item>
+        <ion-button class="menu-button sub" fill="clear" (click)="redirectToReports()">Reports</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button class="menu-button sub" fill="clear" (click)="redirectToSettings()">Settings</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button class="menu-button out" fill="clear" (click)="redirectToLogin()"> Sign out</ion-button>
+      </ion-item>
+    </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main-content"></ion-router-outlet>
+
+
+
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  
+    <ion-title class="title-cont" >LAN Map</ion-title>
+    <ion-title class="title-cont-2" >BatMC LAN Mapping Tool</ion-title>
+
+  <div class="main-box">
+    <ion-card class="card">
+
+    <ion-grid>
+      <ion-row class="first-batch">
+
+        <div class="txt-icon">
+          <ion-button fill="clear" class="image-networkmap" (click)="redirectToNetworkMap()">
+            <ion-img src="/assets/home-logo/network map.png"></ion-img>
+          </ion-button>
+          <p>Network Map</p>
+        </div>
+        
+        <div class="txt-icon">
+          <ion-button fill="clear" class="image-comp" (click)="redirectToComp()">
+            <ion-img src="/assets/home-logo/comp.png"></ion-img>
+          </ion-button>
+          <p>Computers & <br> Peripherals</p>
+        </div>
+        
+        <div class="txt-icon">
+          <ion-button fill="clear" class="image-router" (click)="redirectToRouter()">
+            <ion-img src="/assets/home-logo/router.png"></ion-img>
+          </ion-button>
+          <p>Routers</p>
+        </div>
+        
+      </ion-row>
+    </ion-grid>
+      
+    <ion-grid>
+      <ion-row class="second-batch">
+
+        <div class="txt-icon2">
+          <ion-button fill="clear" class="image-switch" (click)="redirectToSwitch()">
+            <ion-img src="/assets/home-logo/switch.png"></ion-img>
+          </ion-button>
+          <p>Switches</p>
+        </div>
+        
+        <div class="txt-icon2">
+          <ion-button fill="clear" class="image-server" (click)="redirectToServer()">
+            <ion-img src="/assets/home-logo/server.png"></ion-img>
+          </ion-button>
+          <p>Servers</p>
+        </div>
+                
+      </ion-row>
+    </ion-grid>
+      
+    
+      
+    </ion-card>
+  </div>
+</ion-content>

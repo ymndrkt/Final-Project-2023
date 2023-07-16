@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+      <ion-title>Settings</ion-title>
+    </ion-row>
+    </ion-grid>
+    
+  
+    <ion-buttons slot="end" class="back-button">
+      <ion-button (click)="goBack()" class="go-back-button" fill="clear">
+        <ion-icon name="chevron-back" class="go-back-icon"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+<ion-grid>
+  <ion-row>
+    <div class="left-box">
+      <ion-card class="left-card"> 
+        <ion-card-content>
+
+          <div>
+            <ion-img src="/assets/home-logo/network map.png" class="img-logo"></ion-img>
+          </div>
+          <div class="txt-logo">
+            <p>Network Map</p>
+          </div>
+          
+          
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    <div class="middle-box">
+      <ion-card class="middle-card "> 
+        <ion-card-content>
+
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-row>
+</ion-grid>

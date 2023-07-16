@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+      <ion-title>Routers</ion-title>
+    </ion-row>
+    </ion-grid>
+    
+  
+    <ion-buttons slot="end" class="back-button">
+      <ion-button (click)="goBack()" class="go-back-button" fill="clear">
+        <ion-icon name="chevron-back" class="go-back-icon"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+<div class="main-box">
+  <ion-card class="card"> 
+    <ion-card-content>
+      <table class="custom-table">
+        <thead class="theads">
+          <tr>
+            <th>Device Name</th>
+            <th>MAC Address</th>
+            <th>IP Address</th>
+            <th>Building</th>
+            <th>Floor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Asus ROG Rapture GT-AXE16000</td>
+            <td>R0:T8:24:CD:6D:60</td>
+            <td>192.168.4.1 </td>
+            <td>Bldg 1</td>
+            <td>1st Flr</td>
+            <td style="color:green;">up</td>
+          </tr>
+          <tr>
+            <td>Synology WRX560</td>
+            <td>R2:T6:64:C0:6I:60 </td>
+            <td>192.168.4.2 </td>
+            <td>Bldg 1</td>
+            <td>1st Flr </td>
+            <td style="color:green;">up</td>
+          </tr>
+          <tr>
+            <td>TP-Link Archer AXE75</td>
+            <td>R5:T5:74:90:6F:P0</td>
+            <td>192.168.4.4 </td>
+            <td>Bldg 1</td>
+            <td>1st Flr </td>
+            <td style="color:green;">up</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </ion-card-content>
+  </ion-card>
+</div>

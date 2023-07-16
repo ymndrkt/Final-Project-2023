@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+      <ion-title>Servers</ion-title>
+    </ion-row>
+    </ion-grid>
+    
+  
+    <ion-buttons slot="end" class="back-button">
+      <ion-button (click)="goBack()" class="go-back-button" fill="clear">
+        <ion-icon name="chevron-back" class="go-back-icon"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+<div class="main-box">
+  <ion-card class="card des"> 
+    <ion-card-content>
+      <table class="custom-table">
+        <thead class="theads">
+          <tr>
+            <th>Device Name</th>
+            <th>MAC Address</th>
+            <th>IP Address</th>
+            <th>Building</th>
+            <th>Floor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>DELL</td>
+            <td>S1:E3:24:CD:6D:90</td>
+            <td>192.168.3.1 </td>
+            <td>Bldg 1</td>
+            <td>1st Flr</td>
+            <td style="color:green;">up</td>
+          </tr>
+          <tr>
+            <td>HP</td>
+            <td>S0:E8:24:CD:6D:60</td>
+            <td>192.168.3.2</td>
+            <td>Bldg 1</td>
+            <td>1st Flr</td>
+            <td style="color:green;">up</td>
+          </tr>          
+        </tbody>
+      </table>
+    </ion-card-content>
+  </ion-card>
+</div>

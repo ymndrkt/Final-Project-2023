@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+      <ion-title>Network Map</ion-title>
+    </ion-row>
+    </ion-grid>
+    
+  
+    <ion-buttons slot="end" class="back-button">
+      <ion-button (click)="goBack()" class="go-back-button" fill="clear">
+        <ion-icon name="chevron-back" class="go-back-icon"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false" class="bg-container">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+
+  <div class="main-box">
+    <ion-card class="card"> 
+      <ion-card-content>
+
+        <ion-card class="legendCard">
+          <ion-card-header>
+            <ion-card-title>Legend</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <p><ion-icon name="radio-button-on-outline" color="success"></ion-icon>
+              <ion-text> Good Connection</ion-text>
+              </p>
+            <p><ion-icon name="radio-button-on-outline" color="danger"></ion-icon>
+              <ion-text> Bad Connection</ion-text>
+            </p>
+            <p><ion-icon name="radio-button-on-outline" color="warning"></ion-icon>
+              <ion-text> High Latency</ion-text>
+            </p>
+              
+          </ion-card-content>
+        </ion-card>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+      
