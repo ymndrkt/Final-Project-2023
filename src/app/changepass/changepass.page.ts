@@ -33,16 +33,14 @@ export class ChangepassPage implements OnInit {
   }
 
   changePassword() {
-    
+
     if (this.newPassword !== this.confirmNewPassword) {
       this.showAlert('New password and confirm password do not match');
       return;
     }
 
-    // Set the new password in the password service
     this.passwordService.setPassword(this.newPassword);
 
-    // Handle successful password change
     console.log('Password changed successfully');
     this.navCtrl.navigateRoot('/home');
   }

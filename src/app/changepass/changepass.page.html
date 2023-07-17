@@ -37,7 +37,7 @@
       </div>
 
       <div class="content-section">
-        <ion-input type="password" placeholder="Confirm Password" class="input-text" [(ngModel)]="confirmNewPassword"></ion-input>
+        <ion-input type="password" placeholder="Confirm Password" class="input-text" [(ngModel)]="confirmNewPassword" (keyup.enter)="changePassword()"></ion-input>
       </div>
       
       <ion-button expand="full" type="submit" shape="round" (click)="changePassword()">Save</ion-button>

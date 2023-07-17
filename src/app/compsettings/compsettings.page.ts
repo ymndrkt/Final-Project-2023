@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-compsettings',
@@ -16,13 +16,17 @@ export class CompsettingsPage implements OnInit {
   devices: any[] = [];
   selectedDevices: any[] = [];
 
-  constructor(private navCtrl: NavController) {}
+  constructor(
+    private navCtrl: NavController,
+    private alertController: AlertController
+  ) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
   goBack() {
     this.navCtrl.back();
   }
+
   addDevice() {
     const newDevice = {
       deviceName: this.deviceName,
@@ -35,7 +39,6 @@ export class CompsettingsPage implements OnInit {
 
     this.devices.push(newDevice);
 
-    // Clear input fields
     this.deviceName = '';
     this.deviceType = '';
     this.macAddress = '';
@@ -43,7 +46,30 @@ export class CompsettingsPage implements OnInit {
     this.building = '';
     this.floor = '';
   }
-  deleteDevice(device: any) {
+
+  async deleteDevice(device: any) {
+    const alert = await this.alertController.create({
+      header: 'Confirm Delete',
+      message: `Are you sure you want to delete ${device.deviceName}?`,
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+        },
+        {
+          text: 'Delete',
+          handler: () => {
+            this.performDelete(device);
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+  }
+
+  performDelete(device: any) {
     const index = this.devices.indexOf(device);
     if (index > -1) {
       this.devices.splice(index, 1);

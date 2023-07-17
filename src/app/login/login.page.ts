@@ -35,18 +35,16 @@ export class LoginPage implements OnInit {
   }
 
   login() {
-    // Get the password from the password service
+
     const storedPassword = this.passwordService.getPassword();
 
-    // Validate the username and password
     if (this.username === 'admin' && this.password === storedPassword) {
-      // Handle successful login
       console.log('Login successful');
       this.navCtrl.navigateRoot('/home');
+
     } else {
-      // Handle invalid credentials
       console.log('Invalid credentials');
-      this.showAlert('The password you entered is incorrect.');
+      this.showAlert('The password or email you provided is incorrect.');
     }
   }
 }
