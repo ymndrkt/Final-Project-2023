@@ -175,7 +175,11 @@ ion-title{
 }
 .custom-table th:nth-child(7),//for Status
 .custom-table td:nth-child(7) {
-  width: 300px; 
+  width: 50px; 
+}
+.custom-table th:nth-child(8),//for delete
+.custom-table td:nth-child(8) {
+  width: 10px; 
 }
 //end
 

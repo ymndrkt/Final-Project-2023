@@ -151,15 +151,15 @@ ion-title{
 
 .custom-table th:nth-child(1),//for Name
 .custom-table td:nth-child(1) {
-  width: 600px; 
+  width: 800px; 
 }
 .custom-table th:nth-child(2),//for MAC Address
 .custom-table td:nth-child(2) {
-  width: 500px; 
+  width: 400px; 
 }
 .custom-table th:nth-child(3),//for IP Address
 .custom-table td:nth-child(3) {
-  width: 600px; 
+  width: 400px; 
 }
 .custom-table th:nth-child(4),//for Building
 .custom-table td:nth-child(4) {
@@ -171,7 +171,11 @@ ion-title{
 }
 .custom-table th:nth-child(6),//for Status
 .custom-table td:nth-child(6) {
-  width: 300px; 
+  width: 50px; 
+}
+.custom-table th:nth-child(6),//for delete
+.custom-table td:nth-child(6) {
+  width: 10px; 
 }
 //end
 
