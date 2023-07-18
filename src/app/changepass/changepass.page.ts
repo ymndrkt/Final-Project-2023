@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, AlertController } from '@ionic/angular';
-import { PasswordService } from '../PassService/pass.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-changepass',
@@ -8,40 +7,15 @@ import { PasswordService } from '../PassService/pass.service';
   styleUrls: ['./changepass.page.scss'],
 })
 export class ChangepassPage implements OnInit {
-  newPassword!: string;
-  confirmNewPassword!: string;
 
-  constructor(
-    private navCtrl: NavController,
-    private passwordService: PasswordService,
-    private alertController: AlertController
-  ) {}
+  constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {}
-
+  ngOnInit() {
+  }
+  redirectToHome() {
+    this.navCtrl.navigateRoot('/home');
+  }
   goBack() {
     this.navCtrl.back();
-  }
-
-  async showAlert(message: string) {
-    const alert = await this.alertController.create({
-      header: 'Password Error',
-      message: message,
-      buttons: ['OK']
-    });
-    await alert.present();
-  }
-
-  changePassword() {
-
-    if (this.newPassword !== this.confirmNewPassword) {
-      this.showAlert('New password and confirm password do not match');
-      return;
-    }
-
-    this.passwordService.setPassword(this.newPassword);
-
-    console.log('Password changed successfully');
-    this.navCtrl.navigateRoot('/home');
   }
 }
