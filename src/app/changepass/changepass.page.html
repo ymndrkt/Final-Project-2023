@@ -29,18 +29,18 @@
       <ion-title class="title" >Change Password</ion-title>
 
       <div class="content-section">
-        <ion-input type="password" placeholder="Current Password" class="input-text"></ion-input>
+        <ion-input type="password" placeholder="Current Password" class="input-text" ></ion-input>
       </div>
 
       <div class="content-section">
-        <ion-input type="password" placeholder="New Password" class="input-text"></ion-input>
+        <ion-input type="password" placeholder="New Password" class="input-text" [(ngModel)]="newPassword"></ion-input>
       </div>
 
       <div class="content-section">
-        <ion-input type="password" placeholder="Confirm Password" class="input-text"></ion-input>
+        <ion-input type="password" placeholder="Confirm Password" class="input-text" [(ngModel)]="confirmNewPassword" (keyup.enter)="changePassword()"></ion-input>
       </div>
       
-      <ion-button expand="full" type="submit" shape="round" (click)="redirectToHome()">Save</ion-button>
+      <ion-button expand="full" type="submit" shape="round" (click)="changePassword()">Save</ion-button>
     </ion-card>
   </div>
 </ion-content>
